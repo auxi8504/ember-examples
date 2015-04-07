@@ -1,0 +1,17 @@
+<div class="songs-container">
+  List of Songs
+  <ul class="songs">
+  {{#each song in model}}
+    <li>
+      Name: {{#link-to 'songs.song' song}}{{song.name}}{{/link-to}}
+      Duration: {{song.duration}}
+    </li>
+  {{/each}}
+  </ul>
+  <p>{{longSongCount}} songs over 30 second</p>
+  <p>{{songsCount}} total songs</p>
+  <p>{{testVar}}</p>
+</div>
+<div class="song-details">
+{{outlet}}
+</div>

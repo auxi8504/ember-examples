@@ -1,0 +1,8 @@
+.songs-container {
+  float: left;
+  width: 400px;
+}
+
+.song-details {
+  float: left;
+}

@@ -6,6 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('songs', function() {
+    this.route('song', {path: '/:song_id'}); //dynamic segment
+  });
 });
 
 export default Router;
