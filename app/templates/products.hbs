@@ -1,0 +1,16 @@
+<div class="left-container">
+  {{#link-to 'products.new'}}Create new product{{/link-to}}
+  <h3>Available products</h3>
+  <ul>
+  {{#each product in model}}
+    {{#unless product.isNew}}
+      <li>
+        {{#link-to 'products.detail' product}}{{product.name}}{{/link-to}}
+      </li>
+    {{/unless}}
+  {{/each}}
+  </ul>
+</div>
+<div class="right-container">
+{{outlet}}
+</div>

@@ -14,3 +14,12 @@ var App = Ember.Application.extend({
 loadInitializers(App, config.modulePrefix);
 
 export default App;
+
+/*
+  Component in charge to display custom version of the product detail
+  Component using the {{yield}}
+  Using tagName inside the component
+  Using classNameBindings and a computer property
+  Using action toggleImage and imageDisplay property in the controller and the template
+
+*/

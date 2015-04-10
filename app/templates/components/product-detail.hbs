@@ -1,0 +1,6 @@
+<p>Product: {{product.name}}</p>
+{{#if imageDisplay}}
+  <img {{bind-attr src='product.image'}}>
+{{/if}}
+{{yield}}
+<button {{action 'toggleImage'}}>Hide Image</button>

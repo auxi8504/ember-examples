@@ -1,0 +1,22 @@
+.left-container {
+  float: left;
+  width: 200px;
+}
+
+.right-container {
+  float: left;
+}
+
+.product-name {
+  color: red;
+}
+
+.active {
+  color: green;
+}
+.product-detail {
+  border: 1px solid red;
+}
+.is-mouse {
+  border: 1px solid green;
+}
