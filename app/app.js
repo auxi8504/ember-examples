@@ -14,3 +14,9 @@ var App = Ember.Application.extend({
 loadInitializers(App, config.modulePrefix);
 
 export default App;
+/*
+An adapter was created
+A product model was created, and some fixtures
+Application route is using the store
+Use the expression helper of handlebars
+*/
