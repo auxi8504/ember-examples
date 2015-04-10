@@ -1,0 +1,14 @@
+<div class="left-container">
+  {{#link-to 'products.new'}}Create new product{{/link-to}}
+  <h3>Available products</h3>
+  <ul>
+  {{#each product in model itemController="products/detail"}}
+    <li>
+      {{#link-to 'products.detail' product}}{{product.upperCase}}{{/link-to}}
+    </li>
+  {{/each}}
+  </ul>
+</div>
+<div class="right-container">
+{{outlet}}
+</div>

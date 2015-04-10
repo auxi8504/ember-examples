@@ -1,0 +1,16 @@
+.left-container {
+  float: left;
+  width: 200px;
+}
+
+.right-container {
+  float: left;
+}
+
+.product-name {
+  color: red;
+}
+
+.active {
+  color: green;
+}
