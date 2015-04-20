@@ -1,0 +1,12 @@
+<!--p {{bind-attr class='classExample'}}>Product: {{model.name}}</p>
+{{outlet}}
+<img {{bind-attr src='model.image'}}-->
+
+<h2>Product detail using a COMPONENT</h2>
+{{product-detail product=model}}
+
+<h2>Product detail using a PARTIAL</h2>
+{{partial 'productPartial'}}
+
+<h2>Product detail using RENDER</h2>
+{{render 'productPartial'}}

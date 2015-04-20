@@ -1,0 +1,24 @@
+<h3>Adding new product</h3>
+<div id="newProduct">
+  <form id="productForm">
+    <div class="row">
+      <label>Name: </label>
+      {{input type="text" id="productName" name="productName" value=model.name}}
+    </div>
+    <div class="row">
+      <label>Country:</label>
+      {{view "select" name="productMadeIn" content=countries optionLabelPath="content.name" prompt="Select a country" optionValuePath="content.id" selectionBinding="country"}}
+    </div>
+    <div class="row">
+      <label>Description:</label>
+      {{textarea value=model.description name="productDesc" cols="20" rows="3"}}
+    </div>
+    <div class="row">
+      <label>Available:</label>
+      {{input type="checkbox" checked=model.available}}
+    </div>
+    <!--button type="button" name="saveBtn">Save</button-->
+    <button type="button" {{action 'save'}}>Save</button>
+  </form>
+</div>
+{{outlet}}
