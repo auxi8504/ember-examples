@@ -1,0 +1,18 @@
+<div class="left-container">
+  {{#link-to 'products.new'}}Create new product{{/link-to}}
+  <h3>Available products</h3>
+  <ul>
+  {{#each product in model}}
+    {{#unless product.isNew}}
+      <li>
+        {{#link-to 'products.detail' product classNames="product-name"}}{{product.name}}{{/link-to}}
+        {{#link-to 'products.edit' product classNames="edit-link"}}Edit{{/link-to}}
+        <a href="#" class="delete-link" {{action 'deleteRecord' product}} >Delete</a>
+      </li>
+    {{/unless}}
+  {{/each}}
+  </ul>
+</div>
+<div class="right-container">
+{{outlet}}
+</div>

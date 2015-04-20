@@ -1,0 +1,43 @@
+.left-container {
+  float: left;
+  width: 320px;
+}
+.left-container .product-name {
+  display: inline-block;
+  width: 100px;
+}
+
+.right-container {
+  float: left;
+}
+
+.product-name {
+  color: red;
+}
+
+.active {
+  color: green;
+}
+.product-detail {
+  border: 1px solid red;
+}
+.is-mouse {
+  border: 1px solid green;
+}
+
+#newProduct div.row {
+  padding: 10px;
+}
+
+#newProduct label {
+  width: 105px;
+  display: inline-block;
+}
+
+#newProduct input, #newProduct select, #newProduct textarea {
+  width: 200px;
+}
+
+.edit-link, .delete-link {
+  padding-left: 20px;
+}

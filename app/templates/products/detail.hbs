@@ -1,0 +1,11 @@
+<!--p {{bind-attr class='classExample'}}>Product: {{model.name}}</p>
+{{outlet}}
+<img {{bind-attr src='model.image'}}-->
+
+<h2>Product detail using a component</h2>
+{{product-detail product=model}}
+
+<h2>Product detail using a component and customizing content</h2>
+{{#product-detail product=model}}
+<p>This is the content that I'm customizing</p>
+{{/product-detail }}
